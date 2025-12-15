@@ -1,4 +1,4 @@
-html, body {
+﻿html, body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
@@ -57,4 +57,29 @@ h1:focus {
 
 .form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
     text-align: start;
+}
+
+.nav-scrollable {
+    background: linear-gradient(to top, #d2b48c 0%, #d2b48c 40%, #8b4513 100%);
+    color: white;
+    height: 100%; /* чтобы занимало всю высоту меню */
+}
+
+.reservation-card {
+    background-color: #fff;
+    border-radius: 15px; /* Закругление углов */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2); /* Тень для эффекта lift */
+    padding: 5px;
+    padding-bottom: 1px;
+    margin-top: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.table th, .table td {
+    vertical-align: middle;
+}
+
+.table thead.thead-dark {
+    background-color: #8b4513;
+    color: #fff;
 }

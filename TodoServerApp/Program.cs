@@ -1,4 +1,5 @@
 using TodoServerApp.Components;
+using TodoServerApp.Services;
 
 namespace TodoServerApp
 {
@@ -11,6 +12,8 @@ namespace TodoServerApp
             // Add services to the container.
             builder.Services.AddRazorComponents()
                 .AddInteractiveServerComponents();
+
+            builder.Services.AddSingleton<BookingService>();
 
             var app = builder.Build();
 

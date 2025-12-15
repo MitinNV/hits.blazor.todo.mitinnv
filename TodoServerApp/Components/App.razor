@@ -17,6 +17,13 @@
 <body>
     <Routes />
     <ReconnectModal />
+
+    <script>
+        if (window.location.pathname === "/") {
+            window.location.href = "/booking";
+        }
+    </script>
+
     <script src="@Assets["_framework/blazor.web.js"]"></script>
 </body>
 
